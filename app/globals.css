@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0810;
+  color: #f5f2f0;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0810;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4956a;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9b8ec4;
+}
+
+/* LCARS-style text shadow effect */
+.lcars-text-glow {
+  text-shadow: 0 0 10px rgba(196, 149, 106, 0.5);
+}
+
+/* Animation for flickering lights */
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.lcars-flicker {
+  animation: flicker 4s ease-in-out infinite;
+}
+
+/* LCARS panel styling */
+.lcars-panel {
+  background: linear-gradient(
+    135deg,
+    rgba(10, 8, 16, 0.9),
+    rgba(196, 149, 106, 0.05)
+  );
+  border: 2px solid #c4956a;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(196, 149, 106, 0.2),
+    0 0 20px rgba(196, 149, 106, 0.1);
+}
+
+/* Selection styling */
+::selection {
+  background-color: #c4956a;
+  color: #0a0810;
+}
+
+::-moz-selection {
+  background-color: #c4956a;
+  color: #0a0810;
+}
+
+/* Link hover effects */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #c4956a;
+}
+
+/* Smooth transitions */
+button,
+input,
+select,
+textarea {
+  transition: all 0.3s ease;
+}
+
+/* Code blocks */
+code {
+  font-family: 'Monaco', 'Courier New', monospace;
+  background: rgba(196, 149, 106, 0.1);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Custom input styling */
+input[type='checkbox'] {
+  accent-color: #c4956a;
+}
+
+input[type='range'] {
+  accent-color: #c4956a;
+}
+
+/* Animation for page transitions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+}
