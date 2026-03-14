@@ -6,15 +6,10 @@ import { LcarsBar } from '@/components/LcarsBar';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { useParams } from 'next/navigation';
 
-interface ChapterPageProps {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
-export default async function ChapterPage({ params }: ChapterPageProps) {
-  const { slug } = await params;
+export default function ChapterPage() {
+  const { slug } = useParams<{ slug: string }>();
   const chapter = getChapter(slug);
 
   if (!chapter) {

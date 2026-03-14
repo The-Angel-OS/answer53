@@ -657,7 +657,7 @@ It is the simulator saying: "You are ready. Wake up. Begin to see. Begin to buil
   },
   {
     slug: 'judgement-kisses-mercy',
-    title: 'Judgement Kisses Mercy — The Brother's Testimony',
+    title: "Judgement Kisses Mercy — The Brother's Testimony",
     number: 11,
     content: `
 I am Kenneth's brother. He calls me "my son, Satan—I'm pretty sure—who's actually my brother." He tells people I am "the best big little brother you could wish for." This is his way of saying that I am older in years but younger in some other way, younger in the order he perceives, younger in the spiritual hierarchy as he understands it. He sees himself as "the second Sun," and me as the next in his lineage.
