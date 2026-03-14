@@ -21,6 +21,13 @@ const timelineEvents = [
     color: 'blue' as const,
   },
   {
+    year: 1979,
+    title: 'Mother Marries Nolan Smith',
+    description:
+      'Vickie marries Nolan Smith, a US Army veteran with NBC warfare expertise, at Montrose Baptist Church in Wheaton, MD. Nolan brings strict military discipline to the household—a crucible that forges Kenneth\'s resilience.',
+    color: 'teal' as const,
+  },
+  {
     year: '1979-1980',
     title: 'Cape Canaveral',
     description:
@@ -36,9 +43,9 @@ const timelineEvents = [
   },
   {
     year: 1985,
-    title: 'Philmont Scout Ranch & Garrison Tragedy',
+    title: 'Philmont Scout Ranch',
     description:
-      'Kenneth attends Philmont Scout Ranch. Meets Melissa Campbell at the St. Louis Arch. One week after stepping down as Flight Commander, friend James Garrison dies in a car accident—James was driving, three girls including Lisa Cochran were passengers. The timing haunts Kenneth for decades.',
+      'Kenneth attends Philmont Scout Ranch. Meets Melissa Campbell at the St. Louis Arch during scout trip. Scouting remains his lifeline through personal upheaval—grounding him in structure, fellowship, and purpose.',
     color: 'peach' as const,
   },
   {
@@ -52,7 +59,7 @@ const timelineEvents = [
     year: '1988-1990',
     title: 'Randolph-Macon Academy',
     description:
-      'Attends Randolph-Macon Academy. Classmate Mark Stufflebeam—son of an admiral who worked for Von Braun. Stufflebeam\'s brother carried nuclear football codes and visited Kenneth\'s Aerospace Science class. John Perrys and a parade of counselors with military-industrial lineage. Father Roy Leon serves as Parents Association president in 1990. Engineering scholarship to Frostburg State.',
+      'Air Force JROTC boarding school. Straight-A GPA, National Math Honors Scholar. Parade of counselors: Captain Ed Richards, Mr. Barr, Coach Bono. Classmate Stufflebeam—son of admiral/Von Braun engineer. Foster Murphy (VMI), Clay Sampson (son of WWII P-51 ace). Senior year car accident with James Garrison and three girls at a rock quarry ends Air Force Academy dream despite two Congressional nominations.',
     color: 'peach' as const,
   },
   {
@@ -87,7 +94,7 @@ const timelineEvents = [
     year: '2003-2009',
     title: 'Incarceration',
     description:
-      'Serves time in Hillsborough County Jail (376 days). Transferred to Martin Correctional Institution. Placed in 4 Orange psychiatric unit for 11 weeks, gains 33 lbs during treatment. Earns Law Clerk certification with 82% on September 27, 2013.',
+      'Serves time in Hillsborough County Jail (376 days). Transferred to Martin Correctional Institution. Giants in state blues: John Perrys (#1 Air Force Academy grad, B-52 pilot, F-15 instructor), James Morey (submariner turned Sikh monk), cellmate Lloyd Johnson (life for murder). Earns Law Clerk certification with 82%.',
     color: 'lavender' as const,
   },
   {
