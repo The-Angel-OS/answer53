@@ -52,7 +52,7 @@ const timelineEvents = [
     year: '1988-1990',
     title: 'Randolph-Macon Academy',
     description:
-      'Attends Randolph-Macon Academy. Classmate Mark Stufflebeam connection. School features Von Braun aerospace heritage and nuclear football security visits. Father Roy Leon serves as Parents Association president in 1990. Receives engineering scholarship to Frostburg State University.',
+      'Attends Randolph-Macon Academy. Classmate Mark Stufflebeam—son of an admiral who worked for Von Braun. Stufflebeam\'s brother carried nuclear football codes and visited Kenneth\'s Aerospace Science class. John Perrys and a parade of counselors with military-industrial lineage. Father Roy Leon serves as Parents Association president in 1990. Engineering scholarship to Frostburg State.',
     color: 'peach' as const,
   },
   {
