@@ -28,10 +28,17 @@ const timelineEvents = [
     color: 'lavender' as const,
   },
   {
-    year: 1985,
-    title: 'Philmont Scout Ranch',
+    year: '1980-1986',
+    title: '9 Peach Leaf Court, North Potomac',
     description:
-      'Kenneth attends Philmont Scout Ranch. Meets Melissa Campbell at the St. Louis Arch during scout trip—early formative connection.',
+      'Family settles at 9 Peach Leaf Court in North Potomac, MD. Down the street on Piney Meetinghouse Road: a family whose mother owned Verbatim. Brother\'s best friend Ronny Galansky builds cathedral estates on the Potomac—ballrooms that could swallow the Courtney home. Proximity to power without possessing it.',
+    color: 'amber' as const,
+  },
+  {
+    year: 1985,
+    title: 'Philmont Scout Ranch & Garrison Tragedy',
+    description:
+      'Kenneth attends Philmont Scout Ranch. Meets Melissa Campbell at the St. Louis Arch. One week after stepping down as Flight Commander, friend James Garrison dies in a car accident—James was driving, three girls including Lisa Cochran were passengers. The timing haunts Kenneth for decades.',
     color: 'peach' as const,
   },
   {
