@@ -26,8 +26,8 @@ export default function ChapterPage() {
 
   return (
     <main className="relative min-h-screen">
-      {/* Background gradient */}
-      <div className="fixed inset-0 -z-10 bg-gradient-to-b from-lcars-amber/5 via-lcars-bg to-lcars-teal/5 pointer-events-none" />
+      {/* Deep space background */}
+      <div className="fixed inset-0 -z-10 deep-space-bg pointer-events-none" />
 
       {/* Content */}
       <section className="px-4 md:px-8 py-12 md:py-20">

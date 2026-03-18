@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ParticleCanvas } from '@/components/ParticleCanvas';
 import { ScrollToExplore } from '@/components/ScrollToExplore';
+import { LcarsFrame } from '@/components/LcarsFrame';
 import { LcarsBar } from '@/components/LcarsBar';
 import Link from 'next/link';
 
@@ -30,6 +31,9 @@ export default function Home() {
   return (
     <main className="relative">
       <ParticleCanvas />
+
+      {/* LCARS Frame Decorations */}
+      <LcarsFrame />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 md:px-8 py-20">
