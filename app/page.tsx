@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ParticleCanvas } from '@/components/ParticleCanvas';
 import { ScrollToExplore } from '@/components/ScrollToExplore';
 import { LcarsFrame } from '@/components/LcarsFrame';
 import { LcarsBar } from '@/components/LcarsBar';
@@ -30,8 +29,6 @@ export default function Home() {
 
   return (
     <main className="relative">
-      <ParticleCanvas />
-
       {/* LCARS Frame Decorations */}
       <LcarsFrame />
 

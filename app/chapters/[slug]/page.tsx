@@ -26,10 +26,7 @@ export default function ChapterPage() {
 
   return (
     <main className="relative min-h-screen">
-      {/* Deep space background */}
-      <div className="fixed inset-0 -z-10 deep-space-bg pointer-events-none" />
-
-      {/* Content */}
+      {/* Content — starfield canvas is in root layout */}
       <section className="px-4 md:px-8 py-12 md:py-20">
         <div className="max-w-3xl mx-auto">
           <ChapterContent

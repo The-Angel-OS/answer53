@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Navigation } from '@/components/Navigation';
+import { ParticleCanvas } from '@/components/ParticleCanvas';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -51,6 +52,9 @@ export default function RootLayout({
         className="bg-lcars-bg text-lcars-text antialiased"
         style={{ fontFamily: "'Rajdhani', sans-serif" }}
       >
+        {/* Global starfield + nebula background on every page */}
+        <ParticleCanvas />
+
         <div className="flex h-screen overflow-hidden">
           {/* Navigation Sidebar */}
           <Navigation />
