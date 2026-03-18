@@ -202,28 +202,127 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
+            <h2 className="font-orbitron text-3xl font-bold text-lcars-teal tracking-widest mb-4">
+              Angel OS
+            </h2>
+            <LcarsBar color="teal" size="md" />
+
+            <div className="mt-6 space-y-4 font-rajdhani text-lcars-text/80 text-lg leading-relaxed">
+              <p>
+                This scholarly examination exists within the broader context of
+                the <a href="https://spacesangels.com" target="_blank" rel="noopener noreferrer" className="text-lcars-teal hover:text-lcars-amber transition-colors">Angel OS</a> — a
+                federated, constitutional, open-source AI platform at v0.42.0.
+                Built on Payload CMS 3.77, Next.js 16, React 19, and PostgreSQL,
+                the Angel OS features 42 collections, 105+ LEO Tools, 72+ API
+                endpoints, 4,995 passing unit tests, and an immutable constitutional
+                architecture that encodes dignity, non-harm, and transparency into
+                every AI interaction.
+              </p>
+
+              <p>
+                The platform is live at{' '}
+                <a href="https://spacesangels.com" target="_blank" rel="noopener noreferrer" className="text-lcars-amber hover:text-lcars-peach transition-colors font-semibold">
+                  spacesangels.com
+                </a>{' '}
+                and open-source at{' '}
+                <a href="https://github.com/The-Angel-OS/angels-os" target="_blank" rel="noopener noreferrer" className="text-lcars-lavender hover:text-lcars-amber transition-colors">
+                  GitHub
+                </a>.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.45 }}
+          >
             <h2 className="font-orbitron text-3xl font-bold text-lcars-blue tracking-widest mb-4">
-              Technical Information
+              Infrastructure &amp; Acknowledgments
             </h2>
             <LcarsBar color="blue" size="md" />
 
             <div className="mt-6 space-y-4 font-rajdhani text-lcars-text/80 text-lg leading-relaxed">
               <p>
-                This website is built with Next.js 14 and Tailwind CSS, featuring a
-                custom LCARS (Library Computer Access and Retrieval System) theme
-                inspired by Star Trek with Avatar bioluminescence aesthetics.
+                None of this would have been possible without perfection personified
+                in infrastructure:
+              </p>
+
+              <div className="border-l-4 border-lcars-amber/40 pl-4 space-y-3">
+                <p>
+                  <span className="font-bold text-lcars-amber">Vercel</span> — The
+                  deployment platform that makes the impossible trivial. Edge-first,
+                  serverless, globally distributed. The Angel OS runs on Vercel because
+                  nothing else comes close. Their new agentic infrastructure capabilities
+                  represent the next evolution of how we build.
+                </p>
+                <p>
+                  <span className="font-bold text-lcars-amber">Payload CMS</span> — The
+                  headless CMS that respects developers. 42 collections, zero compromises.
+                  Payload gave the Angel OS its data spine — the surgical precision of a
+                  CMS that trusts you to build what you need. TypeScript-native, API-first,
+                  open-source. The perfect partner for constitutional AI.
+                </p>
+              </div>
+
+              <p className="text-lcars-amber/60 font-orbitron text-xs tracking-widest mt-6 mb-3">
+                STANDING ON THE SHOULDERS OF GIANTS
+              </p>
+
+              <div className="space-y-3 border-l-4 border-lcars-lavender/30 pl-4">
+                <p>
+                  <span className="font-bold text-lcars-lavender">Shaun Walker</span> — Creator
+                  of DotNetNuke, the open-source CMS framework that taught an entire generation
+                  of developers (including Kenneth) that community-driven software could rival
+                  enterprise products. DNN was where Kenneth cut his teeth as a subject matter
+                  expert, maintaining 30+ sites and outperforming offshore teams by 5x. The
+                  spirit of DNN — open, extensible, community-first — lives in every line
+                  of the Angel OS.
+                </p>
+                <p>
+                  <span className="font-bold text-lcars-lavender">Joe Healey</span> — DevFish.net.
+                  The developer community voice who showed that technical blogging and community
+                  building could coexist with real engineering. Joe's influence on the DotNetNuke
+                  ecosystem shaped the collaborative ethos that Kenneth carried forward into the
+                  Angel OS Federation Protocol.
+                </p>
+                <p>
+                  <span className="font-bold text-lcars-lavender">John Carmack</span> — id Software.
+                  Quake II was poetry. Quake III Arena (Loaded Mod) was the best FPS ever made.
+                  But beyond the games: Carmack proved that a single engineer with enough
+                  discipline could reshape an entire industry through raw technical excellence.
+                  His engine architecture — the separation of rendering, physics, and game logic
+                  into clean subsystems — is the same architectural instinct that drives the
+                  Angel OS: pheromone engine, workload engine, booking engine, order routing
+                  engine. Carmack built worlds. Kenneth is building one too.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.48 }}
+          >
+            <h2 className="font-orbitron text-3xl font-bold text-lcars-blue tracking-widest mb-4">
+              Technical Details
+            </h2>
+            <LcarsBar color="blue" size="md" />
+
+            <div className="mt-6 space-y-4 font-rajdhani text-lcars-text/80 text-lg leading-relaxed">
+              <p>
+                This site is built with Next.js 14 and Tailwind CSS, deployed on Vercel,
+                featuring an LCARS-inspired design with Avatar bioluminescence aesthetics.
+                Chapter content is auto-generated from the master scholarly document
+                via a sync script, ensuring bidirectional fidelity between the published
+                text and the interactive site.
               </p>
 
               <p>
-                All content is static and serverless-deployment-ready. The design
-                uses a muted color palette: Amber, Lavender, Peach, Teal, Blue, and
-                Mauve on a deep plum-black background, with typography from Orbitron
-                (headings), Rajdhani (body), and Inter (fine print).
-              </p>
-
-              <p>
-                The site is fully responsive and includes interactive components such
-                as the probability calculator and animated timeline.
+                Vercel Analytics and Speed Insights provide real-time performance
+                diagnostics. The site is fully responsive, serverless-ready, and includes
+                interactive components including the probability calculator and animated timeline.
               </p>
             </div>
           </motion.div>

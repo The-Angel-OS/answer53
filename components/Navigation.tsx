@@ -70,12 +70,36 @@ function NavContent({ onClose }: { onClose?: () => void }) {
         </div>
       </nav>
 
+      {/* Angel OS Branding */}
+      <div className="mt-6 pt-4 border-t border-lcars-amber/20">
+        <a href="https://spacesangels.com" target="_blank" rel="noopener noreferrer" className="block group">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="font-orbitron text-lcars-amber/60 text-[10px] tracking-[0.2em] group-hover:text-lcars-amber transition-colors">ANGEL OS</span>
+            <span className="text-lcars-amber/30 text-[10px]">v0.42.0</span>
+          </div>
+          <p className="text-lcars-teal/50 text-[10px] font-rajdhani group-hover:text-lcars-teal/80 transition-colors">
+            Constitutional AI Federation
+          </p>
+        </a>
+      </div>
+
+      {/* Infrastructure Credits */}
+      <div className="mt-4 pt-3 border-t border-lcars-amber/10">
+        <p className="text-lcars-amber/30 text-[9px] font-orbitron tracking-widest mb-2">
+          BUILT ON
+        </p>
+        <div className="space-y-1 text-lcars-text/25 text-[10px] font-rajdhani">
+          <p><a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="hover:text-lcars-text/50 transition-colors">Vercel</a> + <a href="https://payloadcms.com" target="_blank" rel="noopener noreferrer" className="hover:text-lcars-text/50 transition-colors">Payload CMS</a></p>
+          <p className="text-lcars-text/15">Perfection in infrastructure</p>
+        </div>
+      </div>
+
       {/* Footer info */}
-      <div className="mt-8 pt-4 border-t border-lcars-amber/20">
-        <p className="text-lcars-text/30 text-xs font-inter leading-relaxed">
+      <div className="mt-4 pt-3 border-t border-lcars-amber/10">
+        <p className="text-lcars-text/20 text-[10px] font-inter leading-relaxed">
           A scholarly examination of synchronicity and the life of Kenneth Scott Courtney.
         </p>
-        <p className="text-lcars-amber/30 text-xs font-orbitron mt-2 tracking-widest">
+        <p className="text-lcars-amber/20 text-[9px] font-orbitron mt-2 tracking-widest">
           LCARS // GLORY SEASON
         </p>
       </div>
