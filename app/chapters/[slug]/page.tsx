@@ -2,6 +2,7 @@
 
 import { getChapter, getAllChapters } from '@/lib/chapters';
 import { ChapterContent } from '@/components/ChapterContent';
+import { ChapterTOC } from '@/components/ChapterTOC';
 import { LcarsBar } from '@/components/LcarsBar';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -26,6 +27,9 @@ export default function ChapterPage() {
 
   return (
     <main className="relative min-h-screen">
+      {/* Side panel TOC + Read button — tracks scroll, xl screens only */}
+      <ChapterTOC content={chapter.content} />
+
       {/* Content — starfield canvas is in root layout */}
       <section className="px-4 md:px-8 py-12 md:py-20">
         <div className="max-w-3xl mx-auto">

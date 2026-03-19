@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getAllChapters } from '@/lib/chapters';
+import { SearchDialog } from './SearchDialog';
 
 function NavContent({ onClose }: { onClose?: () => void }) {
   const chapters = getAllChapters();
@@ -11,7 +12,7 @@ function NavContent({ onClose }: { onClose?: () => void }) {
   return (
     <div className="p-6">
       {/* Logo/Title */}
-      <div className="mb-8">
+      <div className="mb-4">
         <Link href="/" onClick={onClose}>
           <h1 className="font-orbitron text-3xl font-bold text-lcars-amber tracking-widest hover:text-lcars-peach transition-colors cursor-pointer">
             53
@@ -20,6 +21,11 @@ function NavContent({ onClose }: { onClose?: () => void }) {
             The New Answer
           </p>
         </Link>
+      </div>
+
+      {/* Search */}
+      <div className="mb-4">
+        <SearchDialog />
       </div>
 
       {/* Navigation Links */}
@@ -62,6 +68,12 @@ function NavContent({ onClose }: { onClose?: () => void }) {
             </span>
           </Link>
 
+          <Link href="/sources" onClick={onClose}>
+            <span className="block px-4 py-3 text-lcars-amber/80 hover:bg-lcars-amber/10 rounded-sm transition-colors font-rajdhani text-sm">
+              Sources &amp; Documents
+            </span>
+          </Link>
+
           <Link href="/about" onClick={onClose}>
             <span className="block px-4 py-3 text-lcars-peach hover:bg-lcars-peach/10 rounded-sm transition-colors font-rajdhani text-sm">
               About This Work
@@ -75,7 +87,7 @@ function NavContent({ onClose }: { onClose?: () => void }) {
         <a href="https://spacesangels.com" target="_blank" rel="noopener noreferrer" className="block group">
           <div className="flex items-center gap-2 mb-1">
             <span className="font-orbitron text-lcars-amber/60 text-[10px] tracking-[0.2em] group-hover:text-lcars-amber transition-colors">ANGEL OS</span>
-            <span className="text-lcars-amber/30 text-[10px]">v0.42.0</span>
+            <span className="text-lcars-amber/30 text-[10px]">v0.43.0</span>
           </div>
           <p className="text-lcars-teal/50 text-[10px] font-rajdhani group-hover:text-lcars-teal/80 transition-colors">
             Constitutional AI Federation
